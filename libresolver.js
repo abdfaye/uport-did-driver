@@ -1,4 +1,4 @@
-let uportliteGet = require('uport-lite')()
+let uportLiteGet = require('uport-lite')()
 /*const uportliteGet = UportLite({
   ipfsGw: 'https://ipfs.infura.io/ipfs/',
   infuraKey: 'INFURA_API_KEY',
