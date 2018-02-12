@@ -3,9 +3,9 @@ const uportLiteGet = UportLite({
   ipfsGw: 'https://ipfs.infura.io/ipfs/',
   infuraKey: 'INFURA_API_KEY',
   networks: {
-    '0x3': {
-      rpcUrl: 'https://ropsten.infura.io',
-      address: '0x41566e3a081f5032bdcad470adb797635ddfe1f0'
+    '0x4': {
+      rpcUrl: 'https://rinkeby.infura.io',
+      address: '0x2cc31912b2b0f3075a87b3640923d45a26cef3ee'
     }
   }
 })
