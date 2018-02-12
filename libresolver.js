@@ -1,14 +1,14 @@
-let UportLite = require('uport-lite')
-const uportLiteGet = UportLite({
-  //ipfsGw: 'https://ipfs.infura.io/ipfs/',
-  //infuraKey: 'INFURA_API_KEY',
+let uportLiteGet = require('uport-lite')()
+/*const uportliteGet = UportLite({
+  ipfsGw: 'https://ipfs.infura.io/ipfs/',
+  infuraKey: 'INFURA_API_KEY',
   networks: {
     '0x4': {
       rpcUrl: 'https://rinkeby.infura.io',
       address: '0x2cc31912b2b0f3075a87b3640923d45a26cef3ee'
     }
   }
-})
+})*/
 let didDocumentTemplate = {
   "authenticationCredential": [{
     "id": "",
@@ -28,6 +28,7 @@ let uportResolveLegacy = (did, callback) => {
   uportLiteGet(mnid, (err, doc) => {
     console.log(doc)
     let pubKey = doc.publicKey.slice(2)
+    let name = doc.name
     var didDoc = didDocumentTemplate
     didDoc.authenticationCredential[0].id = did + "#auth"
     didDoc.authenticationCredential[0].publicKeyHex = pubKey
