@@ -1,7 +1,7 @@
 let UportLite = require('uport-lite')
 const uportLiteGet = UportLite({
-  ipfsGw: 'https://ipfs.infura.io/ipfs/',
-  infuraKey: 'INFURA_API_KEY',
+  //ipfsGw: 'https://ipfs.infura.io/ipfs/',
+  //infuraKey: 'INFURA_API_KEY',
   networks: {
     '0x4': {
       rpcUrl: 'https://rinkeby.infura.io',
