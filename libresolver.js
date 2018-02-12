@@ -8,7 +8,7 @@ const uportLiteGet = UportLite({
       address: '0x2cc31912b2b0f3075a87b3640923d45a26cef3ee'
     }
   }
-})*/
+})
 let didDocumentTemplate = {
   "authenticationCredential": [{
     "id": "",
