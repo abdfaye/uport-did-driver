@@ -1,11 +1,11 @@
 let UportLite = require('uport-lite')
 const uportLiteGet = UportLite({
-  ipfsGw: 'https://ipfs.infura.io/ipfs/',
+  ipfsGw: 'http://10.112.50.153:5001',
   infuraKey: 'INFURA_API_KEY',
   networks: {
-    '0x4': {
-      rpcUrl: 'https://rinkeby.infura.io',
-      address: '0x2cc31912b2b0f3075a87b3640923d45a26cef3ee'
+    '0x5': {
+      rpcUrl: 'http://10.112.50.153:22000',
+      address: '0x11f29ef6366c0e69898a5b91c3238a391162e3de'
     }
   }
 })
